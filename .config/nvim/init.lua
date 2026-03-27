@@ -25,13 +25,6 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
-require('nvim-treesitter.configs').setup {
-  ensure_installed = { "html", "css", "javascript", "php", "blade" }, -- Add "blade" here
-  highlight = {
-    enable = true,
-  },
-  -- ... other configurations
-}
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")

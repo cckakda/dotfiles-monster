@@ -1,11 +1,15 @@
 require "nvchad.options"
+require "thanos"
 
 -- add yours here!
 
-local opt = vim.opt
--- o.cursorlineopt ='both' -- to enable cursorline!
-opt.expandtab = true
-opt.shiftwidth = 4
-opt.smartindent = true
-opt.tabstop = 4
-opt.softtabstop = 4
+local o = vim.o
+-- o.cursorlineo ='both' -- to enable cursorline!
+o.expandtab = true
+o.shiftwidth = 4
+o.smartindent = true
+o.tabstop = 4
+o.softtabstop = 4
+o.conceallevel = 1
+o.number = true
+o.relativenumber = true
